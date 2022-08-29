@@ -13,10 +13,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: lightgray;
-}
-
 .content {
     display: flex;
     margin: 50px auto;
@@ -67,6 +63,19 @@ body {
     font-size: 1.1em;
 }
 
+.fa-arrow-right-to-bracket {
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.top-banner-button:hover {
+    font-weight: 700;
+}
+
+.top-banner-button:hover .fa-arrow-right-to-bracket {
+    transform: rotate(360deg);
+}
+
 .top-banner-cover {
     padding: 25px 50px 0 0;
 }
@@ -78,7 +87,35 @@ body {
 /* ----------------------
   navigation bar design
 ---------------------- */
+.navigation {
+    background-color: black;
+    width: 450px;
+    border-radius: 10px;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    max-height: 14em;
+}
 
+.navigation>nav {
+    margin: 20px;
+}
+
+nav>p {
+    text-decoration: none;
+    background-color: white;
+    max-width: 400px;
+    margin: 1em;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 5%;
+    text-align: center;
+    border-radius: 0.3em;
+}
+
+.highlighted {
+    color: whitesmoke;
+    background-color: red;
+}
 
 /* ---------------
  blogs card design
@@ -114,7 +151,7 @@ body {
 }
 
 .card-info>h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 15px 0;
 }
 
@@ -124,5 +161,5 @@ body {
 
 .fontawesome>span {
     padding-right: 1.5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
