@@ -64,7 +64,7 @@
 }
 
 .fa-arrow-right-to-bracket {
-    transition-duration: 0.5s;
+    transition-duration: 0.75s;
     transition-property: transform;
 }
 
@@ -179,7 +179,7 @@ footer div {
 }
 
 footer h1 {
-    color: whitesmoke;
+    color: #DDDDDD;
     text-align: center;
 }
 
