@@ -1,0 +1,72 @@
+/***************
+      fonts
+ **************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* -------------------------
+ common style or utilities
+--------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+/*-------------------
+  top banner design
+ ------------------*/
+#top-banner {
+    display: flex;
+    background-color: black;
+    margin: 50px auto;
+    justify-content: center;
+    border-radius: 35px;
+}
+
+.top-banner-text {
+    padding-left: 120px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-banner-title {
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+.top-banner-description {
+    font-size: 16px;
+    color: whitesmoke;
+    margin: 25px 0;
+}
+
+.top-banner-button {
+    color: white;
+    padding: 15px;
+    max-width: 150px;
+    background-color: red;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.top-banner-cover {
+    padding: 25px 50px 0 0;
+}
+
+.banner-cover-image {
+    width: 100%;
+}
