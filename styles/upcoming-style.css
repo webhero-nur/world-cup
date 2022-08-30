@@ -65,3 +65,25 @@
         font-size: 4vw;
     }
 }
+
+/* Medium Devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    /* top banner media query */
+    .matches {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flags img {
+        width: 15vw;
+    }
+
+    .match-info h3 {
+        font-size: 3.5vw;
+    }
+
+    .data-time {
+        font-size: 2.5vw;
+    }
+
+}

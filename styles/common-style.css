@@ -43,8 +43,8 @@
 }
 
 .top-banner-title {
-    color: whitesmoke;
     font-size: 4em;
+    animation: color-change 3s infinite;
 }
 
 .top-banner-description {
@@ -120,6 +120,20 @@
     background-color: red;
 }
 
+/* Tablet Device Button Design */
+
+#tablet-device-btn {
+    display: none;
+    padding: 1vw 3vw;
+    margin-bottom: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.35em;
+    font-weight: 700;
+}
+
 /* --------------
   footer design
 -------------- */
@@ -158,9 +172,36 @@ hr {
     color: gray;
 }
 
+/* ---------------------
+  Animation Properties
+--------------------- */
+@keyframes color-change {
+    0% {
+        color: greenyellow;
+    }
+
+    25% {
+        color: lightblue;
+    }
+
+    50% {
+        color: greenyellow;
+    }
+
+    75% {
+        color: #F94449;
+    }
+
+    100% {
+        color: greenyellow;
+    }
+}
+
 /* --------------
    Media Quary
 -------------- */
+
+/* Small Devices */
 @media screen and (max-width: 576px) {
 
     /* utility media quary */
@@ -239,5 +280,72 @@ hr {
 
     .links a {
         padding: 2vh 0;
+    }
+
+}
+
+/* Medium Devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    /* top banner media query */
+    #top-banner {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .top-banner-text {
+        padding: 5vw;
+    }
+
+    .top-banner-title {
+        font-size: 5vw;
+    }
+
+    .top-banner-description {
+        max-width: 65vw;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .top-banner-button {
+        max-width: 20vw;
+        font-size: 1.2em;
+    }
+
+    /* navigation media query */
+    main.content {
+        flex-direction: column;
+    }
+
+    .navigation {
+        background-color: white;
+    }
+
+    .navigation nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+    }
+
+    .navigation nav>a {
+        border: 1px solid lightgray;
+    }
+
+    /* tablet btn design */
+    #tablet-device-btn-area {
+        display: flex;
+        justify-content: center;
+    }
+
+    #tablet-device-btn {
+        display: block;
+    }
+
+    /* footer media query */
+    footer {
+        padding: 4vh 0;
     }
 }
