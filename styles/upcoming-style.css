@@ -47,3 +47,21 @@
     font-size: 0.8vw;
     padding-top: 5px;
 }
+
+@media screen and (max-width: 576px) {
+    .matches {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .flags img {
+        width: 35vw;
+    }
+
+    .match-info h3 {
+        font-size: 7vw;
+    }
+
+    .data-time {
+        font-size: 4vw;
+    }
+}

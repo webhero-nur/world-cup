@@ -18,7 +18,7 @@
 }
 
 .card-info {
-    width: 100%;
+    width: 90%;
     padding: 5%;
 }
 
@@ -43,4 +43,10 @@
 .fontawesome>span {
     padding-right: 1.5em;
     font-size: 1.1em;
+}
+
+@media screen and (max-width: 576px) {
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

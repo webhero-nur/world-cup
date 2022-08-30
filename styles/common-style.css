@@ -56,7 +56,7 @@
 .top-banner-button {
     color: white;
     padding: 15px;
-    max-width: 150px;
+    max-width: 10vw;
     background-color: red;
     border-radius: 5px;
     text-align: center;
@@ -125,7 +125,7 @@
 -------------- */
 
 footer {
-    padding: 150px 0 100px;
+    padding: 10vh 0 8vh;
     background-color: black;
 }
 
@@ -141,9 +141,8 @@ footer h1 {
 
 footer .links {
     text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 hr {
@@ -163,30 +162,82 @@ hr {
    Media Quary
 -------------- */
 @media screen and (max-width: 576px) {
+
+    /* utility media quary */
     .half-width {
-        width: 90%;
+        width: 80%;
     }
 
+    .content {
+        flex-direction: column;
+    }
+
+    /* top banner media quary */
     #top-banner {
         flex-direction: column;
-        width: 90%;
-        margin: 2vh auto;
+        max-width: 90%;
+        margin: 2vh 5%;
+        border-radius: 1em;
     }
 
     .top-banner-text {
-        margin: 5vw 10vw;
-        padding: 0;
+        padding: 10%;
+    }
+
+    .top-banner-text p {
+        margin: 25px auto;
+        text-align: center;
     }
 
     .top-banner-title {
-        font-size: 1.35em;
+        font-size: 1.8em;
         text-align: center;
     }
 
     .top-banner-description {
-        white-space: nowrap;
+        max-width: 65vw;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
+    .top-banner-button {
+        max-width: 45vw;
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
+
+    .top-banner-cover {
+        margin: 0 10vw;
+        padding: 0;
+    }
+
+    /* navigation bar media quary */
+    .navigation {
+        background-color: white;
+        margin-bottom: 6vh;
+    }
+
+    .nav-btn {
+        border: 1px solid lightgray;
+    }
+
+    /* footer media quary */
+    footer {
+        padding: 4vh 0 3vh;
+    }
+
+    footer div {
+        width: 90vw;
+    }
+
+    footer .links {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .links a {
+        padding: 2vh 0;
+    }
 }
