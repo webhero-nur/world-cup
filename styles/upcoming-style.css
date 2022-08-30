@@ -1,0 +1,49 @@
+/* ---------------
+ blogs card design
+--------------- */
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+}
+
+.match-card {
+    margin: 2%;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    padding: 2.5em 1.5em;
+}
+
+.flags {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flags img {
+    width: 6vw;
+}
+
+.flags span {
+    padding: 0.35em;
+    font-weight: 700;
+    font-size: 1.15em;
+}
+
+.match-info {
+    padding-top: 10%;
+}
+
+.match-info h3 {
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.data-time {
+    color: darkgray;
+    text-align: center;
+    font-size: 0.8vw;
+    padding-top: 5px;
+}

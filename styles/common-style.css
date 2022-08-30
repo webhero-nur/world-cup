@@ -89,7 +89,7 @@
 ---------------------- */
 .navigation {
     background-color: black;
-    width: 450px;
+    min-width: 280px;
     border-radius: 10px;
     margin-top: 0.5em;
     margin-right: 0.5em;
@@ -100,7 +100,9 @@
     margin: 20px;
 }
 
-nav>p {
+.nav-btn {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     text-decoration: none;
     background-color: white;
     max-width: 400px;
@@ -110,58 +112,12 @@ nav>p {
     padding: 5%;
     text-align: center;
     border-radius: 0.3em;
+    color: black;
 }
 
 .highlighted {
     color: whitesmoke;
     background-color: red;
-}
-
-/* ---------------
- blogs card design
---------------- */
-
-.blogs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.blog-card {
-    margin: 2%;
-    border: 1px solid #EEEEEE;
-    border-radius: 15px;
-}
-
-.card-image img {
-    width: 100%;
-}
-
-.card-info {
-    width: 100%;
-    padding: 5%;
-}
-
-.card-info>.box {
-    border: 2px solid black;
-    max-width: 100px;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 1em;
-}
-
-.card-info>h3 {
-    font-size: 1.2em;
-    margin: 15px 0;
-}
-
-.card-info>.fontawesome {
-    color: gray;
-}
-
-.fontawesome>span {
-    padding-right: 1.5em;
-    font-size: 1.1em;
 }
 
 /* --------------
